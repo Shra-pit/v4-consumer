@@ -40,14 +40,14 @@ const MenuBar = () => {
             <Navbar collapseOnSelect expand="lg" className="bg-body-dark">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img src={Logo} alt="logo" style={{color:"white"}}/>
+                        <img src={Logo} alt="logo" className={styles.logo_image}/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent:"end"}}>
                         <Nav>
                             {menuItems.map(({ title }) =>
                             (
-                                <Nav.Link href="#features" className={styles.menu_links}>{title}</Nav.Link>
+                                <Nav.Link href="#v4consumer" className={styles.menu_links}>{title}</Nav.Link>
 
                             ))}
                         </Nav>
